@@ -36,7 +36,7 @@
                 <img src="images/Ashish.jpg"></div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Ashish Thapa Magar is the name among the tech enthuasiast who is following his passion as a career.</p>
+                <p>Ashish Thapa Magar is the name among the tech enthusiasts who is following his passion as a career.</p>
                 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -108,7 +108,7 @@
     
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form name="submit-to-google-sheet" id="submit-to-googlesheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -139,9 +139,9 @@
     }
 </script>
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbx-w2MGKdWlpKYVdnYFcdjLlCEjq4OuM-f-5_4YsEatpZ3X1Vx2w9XKt5C4boKTVwaV/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyrb19MFcjHy4gbencBTY7MbuRPUBh7DH2IGR-7r9UTJ9RRg5N-7qSxT8vk7jHzsWvh/exec'
+  const form = document.getElementById('submit-to-googlesheet');
+  const msg = document.getElementById("msg");
 
   form.addEventListener('submit', e => {
     e.preventDefault()
@@ -158,4 +158,5 @@
 </script>
 
 </body>
+
 </html>
